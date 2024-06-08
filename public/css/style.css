@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: lightgray;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: orangered;
+    padding: 1rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  input {
+    min-width: 600px;
+    height: 2rem;
+    border-radius: 10px 0 10px 0;
+    border: solid 2px orangered;
+    padding-left: 1rem;
+    color: orangered;
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 1rem;
+  }
+  
+  ::placeholder {
+    color: orangered;
+  }
+  
+  button {
+    width: 200px;
+    height: 2rem;
+    background: orangered;
+    color: white;
+    border: none;
+    border-radius: 0 10px 0 10px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background: darkorange;
+  }
+  
+  .todo-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: solid 1px #ddd;
+  }
+  
+  .todo-value {
+    color: orangered;
+    font-size: 1.2rem;
+    word-break: break-word;
+    flex: 1;
+  }
+  
+  .todo-delete {
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .todo-delete:hover {
+    color: darkred;
+  }
+  
